@@ -1,0 +1,39 @@
+{
+  //General
+  "files.autoSave": "afterDelay",
+  // Eye candy
+  "editor.mouseWheelZoom": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  // Fonts
+  "editor.fontFamily": "'MesloLGS NF', 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Cascadia Mono'",
+  "editor.fontLigatures": true,
+  // Minimal workspace
+  // "workbench.activityBar.visible": false,
+  // "workbench.sideBar.location": "right",
+  // "workbench.statusBar.visible": false,
+  // "workbench.editor.showTabs": false,
+  // Formatter
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //Linter
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": false,
+  "eslint.run": "onSave",
+  "eslint.validate": ["typescript"],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  //Git
+  "git.ignoreLimitWarning": true
+}
