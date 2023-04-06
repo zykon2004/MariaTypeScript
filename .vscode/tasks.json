@@ -3,11 +3,11 @@
   "tasks": [
     {
       "type": "typescript",
-      "options": {
-        "shell": {
-          "executable": "powershell.exe"
-        }
-      },
+      // "options": {
+      //   "shell": {
+      //     "executable": "powershell.exe"
+      //   }
+      // },
       "tsconfig": "tsconfig.json",
       "problemMatcher": ["$tsc"],
       "group": {

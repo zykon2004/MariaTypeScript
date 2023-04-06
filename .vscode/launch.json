@@ -10,7 +10,7 @@
                 "NODE_ENV": "development"
             },
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/index.ts",
+            "program": "${workspaceRoot}/src/index.ts",
             "request": "launch",
             "runtimeArgs": [
                 "--nolazy"
