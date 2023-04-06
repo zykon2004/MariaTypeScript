@@ -4,9 +4,9 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "NODE_PATH=./build node build/index.js",
-    "build": "tsc -p .",
-    "dev": "nodemon src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node dist/index.js",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/zykon2004/MariaTypeScript#readme",
   "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
   }
 }
