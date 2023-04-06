@@ -1,9 +1,9 @@
 {
   //General
   "files.autoSave": "afterDelay",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // "terminal.integrated.defaultProfile.windows": "Git Bash",
   // Eye candy
-  "editor.mouseWheelZoom": true,
+  "editor.mouseWheelZoom": true, 
   "editor.cursorBlinking": "expand",
   "editor.cursorWidth": 3,
   // Fonts
