@@ -1,4 +1,4 @@
-import { instructions } from "./1";
+import { instructions } from "./4";
 
 const world = "world";
 
