@@ -8,7 +8,7 @@
   "editor.cursorWidth": 3,
   // Fonts
   "editor.fontFamily": "'MesloLGS NF', 'Courier New', monospace",
-  "terminal.integrated.fontFamily": "'Cascadia Mono'",
+  "terminal.integrated.fontFamily": "'Cascadia Mono', monospace",
   "editor.fontLigatures": true,
   // Minimal workspace
   // "workbench.activityBar.visible": false,
