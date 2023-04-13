@@ -11,8 +11,10 @@ let myArray: {id: number, name: string}[] = [
   { "id": 1, "name": "Available" },
 ];
 
-const deleteDouble = myArray.filter((obj) => {
+export const deleteDouble = myArray.filter((obj, index) => {
+  return myArray.indexOf(obj) === index;
+} );
 
 
-});
+
 //while // indexOf
