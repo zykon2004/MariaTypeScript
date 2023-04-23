@@ -1,4 +1,4 @@
-import { sortUsersBy, users } from "./7";
+import { lowerCaseString } from "./8";
 
-const sortedUsersByName = sortUsersBy("id");
-console.log(sortedUsersByName);
+const newStr = lowerCaseString("Apples are round and Apples are Juicy");
+console.log(newStr);
