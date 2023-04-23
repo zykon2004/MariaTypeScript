@@ -1,3 +1,4 @@
-import { filterByKey, demo } from "./5";
+import { sortUsersBy, users } from "./7";
 
-console.log(filterByKey(demo, "NAME"));
+const sortedUsersByName = sortUsersBy("id");
+console.log(sortedUsersByName);
