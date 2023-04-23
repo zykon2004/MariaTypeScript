@@ -4,13 +4,16 @@ export const arr: { id: number; name: string }[] = [
   { id: 3, name: "Norman" },
 ];
 
-
 function findFromValues(myObj: Object, myStr: string): boolean {
-  return Object.values(myObj).some(value => {
+  return Object.values(myObj).some((value) => {
     return value === myStr;
   });
 }
 
-export function findValueInObjectArray (arr: Array <any>, value : string) : boolean {
-    return arr.some(obj => {findFromValues(obj, value)}) // The error is here! somewhere...
-}
+export function findValueInObjectArray(
+  arr: Array<any>,
+  value: string
+): boolean {
+  return arr.some((obj) => {
+    return findFromValues(obj, value);
+  });
