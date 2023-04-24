@@ -1,8 +1,8 @@
+import { removeExtraSpacesBeginningAndEnd } from "./9";
 import {
   checkMultipleConditionsArray,
   checkMultipleConditionsRegex,
 } from "./10";
-import { removeExtraSpacesBeginningAndEnd } from "./9";
 
 import { arr, findValueInObjectArray } from "./11";
 
@@ -15,18 +15,25 @@ console.log("****" + newStr + "****");
 // Exercise 10
 console.log(
   checkMultipleConditionsArray("AaMaria1!")
-    ? "Maria is Awesome"
+    ? "Maria checked multiple conditions with an array of conditions"
     : "Maria is still pretty awesome. Everyone makes mistakes!"
 );
 console.log(
   checkMultipleConditionsRegex("AaMaria1!")
-    ? "Maria is Awesome and knows Regex"
+    ? "Maria checked multiple conditions with Regex"
     : "Maria is still pretty awesome. Everyone makes mistakes!"
 );
 console.log(
   checkMultipleConditionsRegex("MMMMMMM!1")
     ? "Maria is still pretty awesome. Everyone makes mistakes!"
-    : "Maria is Awesome and knows Regex"
+    : "This condition should not pass"
 );
 // Exercise 11
-console.log(findValueInObjectArray(arr, "Marcus"));
+let name = "Marcus"
+console.log(
+  findValueInObjectArray(arr, name) ? name + " in arr" : name + " not in arr"
+);
+name = "Maria"
+console.log(
+  findValueInObjectArray(arr, name) ? name + " in arr" : name + " not in arr"
+);

@@ -17,3 +17,4 @@ export function findValueInObjectArray(
   return arr.some((obj) => {
     return findFromValues(obj, value);
   });
+}
