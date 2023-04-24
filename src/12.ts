@@ -4,4 +4,6 @@ export const employees: { id: number; name: string; department: string }[] = [
   { id: 3, name: "Norman", department: "IT" },
 ];
 
-function getDepartmentById (id: number) 
+function getDepartmentById (id: number) : string {
+    
+} 
