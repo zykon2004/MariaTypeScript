@@ -5,7 +5,8 @@ import {
 } from "./10";
 
 import { arr, findValueInObjectArray } from "./11";
-
+import { getDepartmentById, employees } from "./12";
+import { addItemOfSameType } from "./13";
 // Exercise 9
 const newStr = removeExtraSpacesBeginningAndEnd(
   "     Apples are round and Apples are Juicy    "
@@ -29,11 +30,28 @@ console.log(
     : "This condition should not pass"
 );
 // Exercise 11
-let name = "Marcus"
+let name = "Marcus";
 console.log(
   findValueInObjectArray(arr, name) ? name + " in arr" : name + " not in arr"
 );
-name = "Maria"
+name = "Maria";
 console.log(
   findValueInObjectArray(arr, name) ? name + " in arr" : name + " not in arr"
 );
+// Exercise 12
+console.log(getDepartmentById("id", 4));
+
+// Exercise 13
+console.log("Exercise 13");
+console
+  .log
+  // addItemOfSameType(employees, { id: 5, name: "Maria", department: "R&D" })
+  ();
+console.log(
+  addItemOfSameType(employees, {
+    name: "Robert",
+    id: 5,
+    department: "R&V",
+  })
+);
+console.log(addItemOfSameType(employees, { name: "Maria", department: "R&D" }));
