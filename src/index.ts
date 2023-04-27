@@ -7,6 +7,11 @@ import {
 import { arr, findValueInObjectArray } from "./11";
 import { getDepartmentById, employees } from "./12";
 import { addItemOfSameType } from "./13";
+import {
+  deleteObjectFromArrayByKeyValuePair,
+  filterArrayByKeyValuePair,
+} from "./14";
+
 // Exercise 9
 const newStr = removeExtraSpacesBeginningAndEnd(
   "     Apples are round and Apples are Juicy    "
@@ -55,3 +60,10 @@ console.log(
   })
 );
 console.log(addItemOfSameType(employees, { name: "Maria", department: "R&D" }));
+
+// Exercise 14
+console.log("Exercise 14");
+console.log(
+  deleteObjectFromArrayByKeyValuePair(employees, "department", "Marketing")
+);
+console.log(filterArrayByKeyValuePair(employees, "department", "Marketing"));

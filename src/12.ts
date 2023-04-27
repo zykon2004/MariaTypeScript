@@ -1,5 +1,6 @@
 export const employees: { [propKey: string]: string | number }[] = [
   { id: 2, name: "Marcus", department: "Marketing" },
+  { id: 22, name: "Yolandi", department: "Marketing" },
   { id: 1, name: "Christian", department: "R&D" },
   { id: 3, name: "Norman", department: "IT" },
   { id: 4, name: "Mia", department: "CEO" },
@@ -18,4 +19,3 @@ const x: { [propKey: string]: string | number }[] = [
 ];
 let y: boolean = employees[1].constructor === x.constructor;
 console.log(y);
-
