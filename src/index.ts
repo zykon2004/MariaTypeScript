@@ -11,6 +11,8 @@ import {
   deleteObjectFromArrayByKeyValuePair,
   filterArrayByKeyValuePair,
 } from "./14";
+import { getSearchQueryResultByKey } from "./15";
+import { getValueLargestKeyLetter} from "./16";
 
 // Exercise 9
 const newStr = removeExtraSpacesBeginningAndEnd(
@@ -67,3 +69,16 @@ console.log(
   deleteObjectFromArrayByKeyValuePair(employees, "department", "Marketing")
 );
 console.log(filterArrayByKeyValuePair(employees, "department", "Marketing"));
+
+// Exercise 15
+console.log("Exercise 15");
+
+console.log(
+  getSearchQueryResultByKey(employees, "department", "Marketing", "name")
+);
+// Exercise 16
+console.log("Exercise 16");
+
+console.log(
+  getValueLargestKeyLetter(employees[0])
+);
