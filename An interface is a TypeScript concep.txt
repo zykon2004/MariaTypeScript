@@ -1,0 +1,122 @@
+throw - לזרוק
+fetching - שליפה
+common - משותף
+distinction  - הבחנה
+struggle -מאבק
+neglect- הזנחה
+
+export class GetTasksFolterDto{
+status?:TaskStatus;} - הסימן שאלה אומר שזה אופציונלי
+An interface is a TypeScript concept that simply enforces the shape of an object upon compilation.
+
+Therefore, after compilation interfaces are not preserved anymore.
+
+Class is, on the other hand, are already supported by JavaScript since Ecmascript six and therefore
+
+will be preserved.
+
+Classes are useful when you want to create multiple instances of the same shape following a blueprint,
+
+for example.
+
+They're also useful when you want to enhance those with self-contained functionality using methods.
+
+We are going to utilize classes throughout the course, especially when we start working with typo for
+
+database interaction.
+
+But for the time being I think a simple interface will do.
+
+So let's define our interface.
+
+And call it a task.
+
+
+DTO
+
+
+
+In this lecture, we're going to learn about the concept of data transfer object or in short, Dito.
+
+First, let's try and understand the problem.
+
+Here is a sample diagram a client sends a hate euterpe request to tasks.
+
+This is a post request for creating a task that contains the title and description similar to the current
+
+implementation we have in the up at the moment.
+
+The request then goes to the controller, to the handler were the body parameters, title and description
+
+are extracted.
+
+Then we call a task from the task service.
+
+Providing the title and description is arguments, the create task method then handles those arguments,
+
+creates the task, pushes it into the array, and then returns it back to the controller following the
+
+task interface that we've created.
+
+Finally, we return the response back to the user containing the new task in a JSON format.
+
+Notice how many times we refer to the properties of a task within our code.
+
+Both in the controller and the service, just in order to retrieve the title and description, and this
+
+is marked in red on the screen.
+
+So software changes all the time.
+
+Imagine a situation where we need to make changes to the shape of data.
+
+Maybe at some point we need to change the types of those parameters.
+
+Maybe as requirements change, we need to add additional information to tasks.
+
+To apply such change, we will have to change the implementation in multiple places.
+
+And again, this is marked in red.
+
+This adds complexity to our application and makes it more difficult to scale it.
+
+So to put everything adjusted in one sentence, we do not have a single source of truth, a main place
+
+where we manage the shape of data as it flows through the different components of our application.
+
+And this will especially be emphasized when we work with stuff like repositories and pipes.
+
+So data transfer objects, and this is what Wikipedia has to say about dittos, a data transfer object
+
+is an object that carries data between processes.
+
+One of the highest voted answers on Stack Overflow says a data transfer object is an object that is
+
+used to encapsulate data and send it from one subsystem of an application to another.
+
+In the official necessary documentation, it says EDTA is an object that defines how the data will be
+
+sent over the network.
+
+So here are some more information about DTAs, this is a common concept in software development and
+
+it's not exclusive to nest eggs.
+
+It results in more bulletproof code as it can be used as a typescript type, so we leverage typescript.
+
+Dittos don't have any behavior except for storage, retrieval, serialisation and these serialisation
+
+of its own data.
+
+Details result in an increased performance, although it's negligible in small applications.
+
+And it can be useful for data validation.
+
+And Ed is not a model definition, he does not define an entity, it simply defines the shape of a data
+
+for a specific case or specific operation as it flows through the system, for example, creating a
+
+task.
+
+מודול1 : https://github.com/arielweinberger/nestjs-course-task-management/tree/s1-task-management-app
+מודול 2:https://github.com/arielweinberger/nestjs-course-task-management/tree/s2-validation-and-error-handling
